@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KMITL LOST&FOUND</title>
+	<link rel="shortcut icon" href="images/icon.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+	<script type="text/javascript" src="action.js"></script>
+	<script type="text/javascript" src="firebase.js"></script>
+	<script type="text/javascript" src="config.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyAVwv3cCzZGmo4IvPxzVAADEWyIFtxXN04",
+	    authDomain: "eit-project.firebaseapp.com",
+	    databaseURL: "https://eit-project.firebaseio.com",
+	    projectId: "eit-project",
+	    storageBucket: "",
+	    messagingSenderId: "702863059720"
+	  };
+	  firebase.initializeApp(config);</script>
+	  <style type="text/css">
+	  	body{background-image: url('images/lostfinal.png');background-size: cover;z-index: }
+	  </style>
+</head>
+<body>
+
+	<!-- Intro Page -->
+	<div id="intro" class="wrap show" page="0">
+
+		<button id="login-btn" class="btn" onclick="login()">ลงชื่อเข้าใช้</button>
+        <button id="regis-btn" class="btn" onclick="regis()">ลงทะเบียนสมาชิก</button>
+        <button id="joinweb-btn" class="btn" onclick="indexWeb()">เข้าสู่เว็บไซต์</button></div>
+
+    <!-- Post Page or Home Page-->
+	<div id="post" class="wrap hide" page="1">
+
+		<div id="topnav" class="">
+			<div id="logo"><img src="images/header.png" width="200" height="66"></div>
+			<div id="navbar"><ul>
+				<a href="#contact"><b>CONTACT</b></a>
+				<a href="#about"><b>ABOUT US</b></a>
+				<a href="#home"><b>HOME</b></a>
+				<div id="status-nologin">
+					<div style="text-align: center;font-weight: bold;padding: 0 1rem 0 0;"><b>ลงชื่อเข้าใช้</b><br><b>สมัครสมาชิก</b></div>
+					<div>
+						<div><a style="padding: 1px;" onclick="login()"><b>Login</b></a></div>
+						<div><a style="padding: 0;" onclick="regis()"><b>Register</b></a></div>
+					</div>
+				</div></ul></div></div>
+			
+		<div class="main">
+			<h1> ประกาศของหาย </h1>
+			<div id="column-post"></div>
+			<div class="row" id="row">
+			  <div class="column">
+			    <div class="content">
+			      	<img src="images/pen.jpg" alt="Mountains">
+			    	<h3>My Work</h3>
+			    	<p>ปากกาหายที่เกกี</p>
+			    </div>
+			  </div>
+			  <div class="column">
+			    <div class="content">
+			    	<img src="images/book.jpg" alt="Lights">
+			    	<h3>My Work</h3>
+			    	<p>หนังสือหาย RNP</p>
+			    </div>
+			  </div>
+			  <div class="column">
+			    <div class="content">
+			    	<img src="images/glasses.jpg" alt="Nature">
+			      	<h3>My Work</h3>
+			      	<p>แว่นตาหายที่สนามกีฬา</p>
+			    </div>
+			  </div>
+			  <div class="column">
+			    <div class="content">
+			    	<img src="images/ring.jpg" alt="Mountains">
+			    	<h3>My Work</h3>
+			    	<p>แหวนหายที่คณะไอที</p>
+			    </div>
+			  </div>
+			  <div class="column">
+			    <div class="content">
+			    	<img src="images/ring.jpg" alt="Mountains">
+			    	<h3>My Work</h3>
+			    	<p>แหวนหายที่คณะไอที</p>
+			    </div>
+			  </div>
+			</div></div></div>	
+
+	<!-- About Page -->
+	<div id="about" class="wrap hide" page="2"><div class=""></div></div>
+
+	<!-- Popup -->
+	<div id="login-popup" class="hide">
+
+		<h1>กรุณาลงชื่อเข้าสู่ระบบก่อนใช้งาน</h1>
+			Username  :  <input id="username" type="text" name="username" placeholder="username"><br>
+			Password  :  <input id="password" type="password" name="password" placeholder="password"><br><br>
+			<button style="position: static;" value="Login" class="btn" onclick="loginFirebase();">Login</button>
+
+		<div class="close-window" onclick="popupClose()"><b>X</b></div></div>
+    <div id="regis-popup" class="hide">
+
+		<h1>สมัครสมาชิก</h1>
+			Username : <input id="user" type="text" name="username" placeholder="Enter your username"><br>
+			Password : <input id="pass" type="password" name="password" placeholder="Enter your password"><br>Confirm Password : <input id="confirmpw" type="password" name="confirmpw" placeholder="Contirm your password"><br><br>
+			<button style="position: static;" class="btn" onclick="regisFirebase()">Register</button>
+
+		<div class="close-window" onclick="popupClose()"><b>X</b></div></div>
+	
+</body>
+</html>

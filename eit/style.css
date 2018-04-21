@@ -1,0 +1,337 @@
+:root{
+	--body: #d1640c;
+	--topnav: #333;
+	--postpage: #ddd;}
+
+/*@font-face {
+	src: url(/fonts/supermarket.ttf);
+	font-family: supermarket;}
+*/
+.hide {
+	display: none;
+	visibility: hidden;}
+
+.show {
+	display: block;
+	visibility: visible;}
+
+.close-window {
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    border-radius: 50%;
+}
+
+.close-window:hover {
+	transition: 0.5s;
+	color: white;
+	background-color: black;
+}
+
+/* Intro */
+
+body{
+		background-color: #e8e7e7;
+	  	background-image: url("images/bg-2.png"), url("images/logo.png");
+	  	background-repeat: repeat, no-repeat;
+	  	background-size: auto, 90em;
+	    }
+	.login{
+		position: fixed;
+		color: #fff;
+		width: 8em;
+		height: 2.3em;
+		font-size: 1.75em;
+		font-weight: bold;
+		float: left;
+		top: 2em;
+		left: -0.5em;
+		text-align: center;
+		padding: 0.5em;
+		margin: 0.5em;
+		border-top: 1px dashed #fff;
+		border-right: 1px dashed #fff;
+		border-bottom: 1px dashed #fff;
+		border-radius: 0px 10px 10px 0px;
+		transition: 1.25s;
+
+		text-shadow: #000 0px 1px 1px;
+		background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjEuMCIgeTE9IjEuMCIgeDI9IjAuMCIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIyNSUiIHN0b3AtY29sb3I9IiNlOGIxMDEiLz48c3RvcCBvZmZzZXQ9IjI1JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2U4YjEwMSIvPjxzdG9wIG9mZnNldD0iNzUlIiBzdG9wLWNvbG9yPSIjZThiMTAxIi8+PHN0b3Agb2Zmc2V0PSI3NSUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  		background-size: 100%;
+  		background-image: -moz-linear-gradient(135deg, #e8b101 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, #e8b101 50%, #e8b101 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+  		background-image: -webkit-linear-gradient(135deg, #e8b101 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, #e8b101 50%, #e8b101 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+  		background-image: linear-gradient(-45deg, #e8b101 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, #e8b101 50%, #e8b101 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+  		background-size: 40px 40px;
+  		background-color: #fcc101;
+		}
+	.login:hover{
+		width: 10.5em;
+		}
+	.regis{
+		position: fixed;
+		color: #fff;
+		width: 10em;
+		height: 2.3em;
+		font-size: 1.75em;
+		font-weight: bold;
+		float: left;
+		top: 4.7em;
+		left: -0.5em;
+		text-align: center;
+		padding: 0.5em;
+		margin: 0.5em;
+		border-top: 1px dashed #fff;
+		border-right: 1px dashed #fff;
+		border-bottom: 1px dashed #fff;
+		border-radius: 0px 10px 10px 0px;
+		transition: 1.25s;
+		
+		text-shadow: #000 0px 1px 1px;
+		background-color: #cc0000;
+  		background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjEuMCIgeTE9IjEuMCIgeDI9IjAuMCIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIyNSUiIHN0b3AtY29sb3I9IiNiMzAwMDAiLz48c3RvcCBvZmZzZXQ9IjI1JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2IzMDAwMCIvPjxzdG9wIG9mZnNldD0iNzUlIiBzdG9wLWNvbG9yPSIjYjMwMDAwIi8+PHN0b3Agb2Zmc2V0PSI3NSUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  		background-size: 100%;
+  		background-image: -moz-linear-gradient(135deg, #b30000 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, #b30000 50%, #b30000 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+  		background-image: -webkit-linear-gradient(135deg, #b30000 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, #b30000 50%, #b30000 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+  		background-image: linear-gradient(-45deg, #b30000 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, #b30000 50%, #b30000 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+  		background-size: 40px 40px;
+		}
+	.regis:hover{
+		width: 12.5em;
+		}
+	.enter{
+		position: fixed;
+		color: #000;
+		width: 10em;
+		height: 2.5em;
+		font-size: 1.75em;
+		font-weight: bold;
+		float: right;
+		bottom: 2em;
+		right: -0.5em;
+		text-align: center;
+		padding: 0.5em;
+		margin: 0.5em;
+		border-top: 1px dashed #929292;
+		border-left: 1px dashed #929292;
+		border-bottom: 1px dashed #929292;
+		border-radius: 10px 0px 0px 10px;
+		transition: 1.2s;
+		text-decoration: none;
+
+		text-shadow: rgba(255, 255, 255, 0.9) 0 1px 1px;
+  		background-color: #ccc;
+  		background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjEuMCIgeTE9IjEuMCIgeDI9IjAuMCIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIyNSUiIHN0b3AtY29sb3I9IiNiZmJmYmYiLz48c3RvcCBvZmZzZXQ9IjI1JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2JmYmZiZiIvPjxzdG9wIG9mZnNldD0iNzUlIiBzdG9wLWNvbG9yPSIjYmZiZmJmIi8+PHN0b3Agb2Zmc2V0PSI3NSUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  		background-size: 100%;
+  		background-image: -moz-linear-gradient(135deg, #bfbfbf 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, #bfbfbf 50%, #bfbfbf 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+  		background-image: -webkit-linear-gradient(135deg, #bfbfbf 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, #bfbfbf 50%, #bfbfbf 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+  		background-image: linear-gradient(-45deg, #bfbfbf 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, #bfbfbf 50%, #bfbfbf 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+  		background-size: 40px 40px;
+		}
+	.enter:hover{
+		width: 100.7%;
+		text-decoration: none;
+		}
+
+/*Navigator Bar*/
+	#topnav {
+		top: 0;
+		background-color: var(--topnav);
+		overflow: hidden;
+		position: fixed;
+		width: 100%;
+		z-index: 2;}
+
+	#topnav a {
+		float: right;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		border: solid white 1px;
+		padding: 2rem 2.5rem;
+		letter-spacing: 2px;}
+
+	#topnav a:hover {
+		transition: 0.3s;
+		color: black;
+		background-color: var(--body);}
+
+	#topnav ul {margin: 0;}
+
+	#logo {
+	   	position: fixed;
+	   	margin-top: 0.5rem;
+   		padding: 0.35rem 0.35rem 0rem 0.35rem;
+    	left: 5%;
+    	cursor: pointer;
+    	border: white solid 1px;
+    	border-radius: 1rem;
+    	background-color: grey;
+    	background-image: url(images/header.png) cover no-repeat;}
+
+
+	#logo img:hover {
+		border-radius: 1rem;
+		transition: 0.2s;
+		background-color: white;
+	}
+
+	#status-nologin, #status-login {
+		display: flex;
+		border: white solid 1.3px;
+		float: right;
+		color: white;
+		text-decoration: none;
+		letter-spacing: 2px;
+		width: 13%;
+		padding: 0.5rem;
+		margin: 0.5rem;
+		background-color: var(--body);
+	}
+
+	#status-nologin a {
+		transition: 0.3s;
+		text-decoration: none;
+		text-align: center;
+		width: 100%;
+		opacity: 1;
+		cursor: pointer;
+		border-radius: 10px;
+		border: solid 0.5px white;
+		background-color: #ddd;
+		color: var(--body);
+	}
+
+	#status-nologin a:hover {
+		transition: 0.3s;
+		background-color: var(--topnav);
+		color: var(--body);
+	}
+
+/*Property a Page*/
+	* {
+		font-family: supermarket;
+		font-size: 17px;}
+
+	.wrap {
+		position: relative;
+		width: 100%;
+		height: 100%;}
+
+	.background {
+		position: relative;
+	    top: 0;
+	    right: 0;
+	    left: 0;
+	    overflow: hidden;
+	    z-index: 0;
+	    width: 100%;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;}
+
+/*Each Page Property*/
+	#intro {
+		max-width: 100%;
+		height: auto;}
+
+	#post {
+		box-sizing: border-box;
+		margin: auto;
+		background-color: var(--postpage);}
+
+/*Post Inside*/
+	.main {
+	    max-width: 80%;
+	    margin: auto;
+	    padding: 6rem;}
+
+	.main h1 {
+	    font-size: 3rem;
+	  	text-align: center;}
+
+	.column {
+	    float: left;
+	    width: 22%;
+	    cursor: pointer;
+	    padding: 0.5rem;}
+
+	.column:hover .content {
+		transition: 0.25s;
+		border-color: red;
+    	transform: scale(1.030, 1.030);}
+
+	.row:after {
+	    content: "";
+	    display: table;
+	    clear: both;}
+
+	.content {
+		text-align: center;
+	    background-color: white;
+	    border: black 0.1rem solid;
+	    padding: 1rem;}
+
+	.content img {
+		width: 100px;
+		height: 100px;}
+
+	#login-popup {
+		letter-spacing: 2px;
+	    background-color: #ddd;
+	    position: fixed;
+	    height: 35%;
+	    width: 25%;
+	    border-radius: 10px;
+	    top: 30%;
+	    left: 35%;
+	    z-index: 1;
+	    border: solid black;
+	    padding: 12px 12px;
+	    cursor: pointer;
+	    text-align: center;}
+
+	#login-popup h1 {
+		font-size: 1.2rem;
+	}
+
+	#login-popup input, #regis-popup input {
+		position: sticky;
+	}
+
+	#regis-popup {
+	    letter-spacing: 2px;
+	    background-color: #ddd;
+	    position: fixed;
+	    height: 50%;
+	    width: 40%;
+	    border-radius: 10px;
+	    top: 20%;
+	    left: 30%;
+	    z-index: 1;
+	    border: solid black;
+	    padding: 12px 12px;
+	    cursor: pointer;
+	    text-align: center;
+	}
+
+	#regis-popup h1 {
+		font-size: 1.2rem;
+	}
+
+	input[type=text], input[type=password] {
+	    width: 60%;
+	    padding: 0.5rem 0.5rem;
+	    margin: 8px 0;
+	    box-sizing: border-box;
+	}
+
+	.boxform {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 1%;
+}
