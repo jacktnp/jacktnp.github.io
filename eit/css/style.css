@@ -10,6 +10,10 @@ label{
   font-size: 1.25em !important;
 }
 
+h1, .example-in-box{
+  font-family: 'Kanit', sans-serif !important;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -101,18 +105,14 @@ nav.scroll img {
     }
 }
 /* */
-.
-.center{
-  text-align: center;
-}
 .newpost{
   background-color: #fff;
   width: 100%;
-  height: 6em;
+  height: 3.5em;
   text-align: center;
-  box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.2);
-  color:#00aff0;"
-  padding-top: 2em;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  color:#00aff0;
+  border: 0px;
 }
 .newpost:hover{
   background-color: #dddddd;
@@ -124,7 +124,13 @@ nav.scroll img {
   font-size: 4em;
   font-weight: bold;
   color: #000;
-  margin-left: 1.5em;
+  margin-left: 0.5em;
+}
+
+@media only screen and (max-width: 767px) {
+    .announce1 {
+        text-align: center;
+    }
 }
 
 #newforum{
@@ -139,124 +145,78 @@ nav.scroll img {
   background-color:#fff
 }
 
-#openPopUp{
-  height: auto;
-}
-a#openPopUp:hover{
-  cursor: pointer;
-}
-.popup{
-  position: fixed;
-  top: -100vh;
-  left: 0;
-  z-index: 9999999;
-  background: rgba(0,0,0, 0.75);
-  width: 100vw;
-  height: 100vh;
-  opacity: 0;
-
-    -webkit-transition: opacity  0.35s ease;
-    -moz-transition: opacity 0.35s ease;
-    -o-transition: opacity 0.35s ease;
-    transition: opacity 0.35s ease;
-}
-
-.popup .popUpContainer{
-  width: 100%;
-  max-width: 700px;
-  position: fixed; /* To avoid scroll to target */
-  left: 42%;
-  top: -100vh;
-    -webkit-transition: top  0.35s ease;
-    -moz-transition: top 0.35s ease;
-    -o-transition: top 0.35s ease;
-    transition: top 0.35s ease;
-
-  /* Trick to properly center the element by using negative 
-  1/2 length of element as margin left and top */
-  margin-left: -250px;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-  border-radius: 2px;
-  z-index: 9999999;
-}
-.popup h2{
-  padding: 0.5em;
-  text-align: center;
-  color: #00aff0;
-  margin: 0;
-}
-.popup img{
-  width: 100%;
-  display: block;
-}
-.popup article{
-  height: auto;
-  border-radius: 0px 0px 15px 15px;
-  padding: 2em;
-  background: url('../images/bg/bg_transparent_forum.png') #00aff0;
-}
-/* The cancel button on popup dialog */
-.popup a.closePopUp{
-  font-family: verdana;
-  color: #00aff0;
-  position: absolute;
-  top: 0.4em;
-  right: 0.65em;
-  margin: 0;
-  padding: 7px;
-  font-weight: bold;
-  font-size: 1.7em;
-  text-decoration: none;
-}
-/* The cancel button on popup dialog */
-.popup a:hover{
-  color: #c0392b;
-}
-/* When popup is targeted, by clicking on link with #popup in HTML */
-.popup:target{
-  opacity: 1;
-  top: 0;
-}
-.popup .closePopUpOutSide{
-  position: absolute;
-  left:0;
-  width: 100%;
-  height: 100%;
-  z-index: 9999991; 
-}
-.popup:target .popUpContainer{
+.example-in-box{
+  color:#dfefff;
+  background: #02a2de;
   border-radius: 15px;
-  top: 50px;
-    -webkit-transition: top  0.35s ease;
-    -moz-transition: top 0.35s ease;
-    -o-transition: top 0.35s ease;
-    transition: top 0.35s ease;
+  padding: 10px;
+  margin:5px;
+}
+.in-box{
+  background: #0390c5;
+  border-radius: 15px;
+  padding: 10px;
+  margin:5px;
 }
 
-@media  (max-width: 796px) {
-  .popup .popUpContainer{
+/* The Modal (background) */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.popup-content {
+    background: url('../assets/bg/bg_transparent_forum.png') #00aff0;
     border-radius: 15px;
-    width: 90%;
-    max-width: none;
-    left: 5%;
-    margin-left: 0;
-  }
-  .popup ul{
-    padding: 0 1em 0 1em;
-  }
-  .popup:target .popUpContainer{
-    border-radius: 0px 0px 15px 15px;
-    top: 25px;
-    -webkit-transition: top  0.35s ease;
-    -moz-transition: top 0.35s ease;
-    -o-transition: top 0.35s ease;
-    transition: top 0.35s ease;
-  }
+    margin: auto;
+    margin-top: 3.5%;
+    margin-bottom:50px;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
 }
 
+/* The Close Button */
+.popup-close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.popup-close:hover,
+.popup-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* The Close Button */
+.popup-close2 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.popup-close2:hover,
+.popup-close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* UPLOAD IMAGE */
 
 input[type=file] {
   width: 0;
@@ -272,14 +232,15 @@ input[type=file] {
 
 .preview {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 12.5em;
+  height: 12.5em;
+  max-width: 100%;
   background: #f2f2f2;
   border-radius: 100%;
   margin: 0 auto 25px auto;
   overflow: hidden;
   border: 5px solid #02a2de;
-  background: url("../images/preview_1.jpg") center/cover;
+  background: url('../assets/item/preview_1.jpg') center/cover;
 }
 .preview section img {
   width: 200px;
@@ -309,21 +270,54 @@ input[type=file] {
   }
 }
 
+
 .ghost{
   width: 330px;
   align-items: center;
   padding: 0px !important;
 }
 
+.box-view {
+        position: relative;
+        color: white;
+        width:14em !important;
+        height:14em !important;
+        border-radius: 25px;
+        transition: 0.5s;
+        float: left;
+        margin: 0.6em;
+    }
+
+    .box-view:hover{
+        box-shadow:1px 2px 7px grey;
+        cursor:pointer;
+    }
+
+    .txt-bottom-left {
+        position: absolute;
+        bottom:0px;
+        left:0px;
+        margin-bottom: 0.6em;
+        margin-left: 1em;
+        text-shadow: 1px 2px #000;
+    }
+    .txt-bottom-left h2 {
+        font-size: 1.25em;
+    }
+    .txt-bottom-left p {
+        font-size: 0.75rem;
+    }
+
+
 footer{
-  padding: 4em;
-  margin-top: 5em;
+  padding: 3em;
+  margin-top: 4em;
   margin-bottom: 0px;
   border-top: 3px solid #fff;
   background-color: #00aff0;
   color: #fff;
-  width: 100%;
-  height: 15em;
+  min-width: 100%;
+  height: 11em;
   position: relative;
   bottom: 0px;
 }

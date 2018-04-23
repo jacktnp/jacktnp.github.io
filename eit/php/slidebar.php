@@ -1,7 +1,7 @@
 <div id="demo" class="carousel slide" data-ride="carousel" style="margin-top: 5.1em;">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="images/promote/concept_1550x500.jpg" alt="PROMOTE1 - CONCEPT" style="padding: 0px;" width="100%" height="auto">
+      <img src="assets/pr_img/concept_1550x500.jpg" alt="PROMOTE1 - CONCEPT" style="padding: 0px;" width="100%" height="auto">
       <div class="carousel-caption" style="text-align: left;">
         <!--
         <h3>รับสมัครนักศึกษาปริญญาตรีรุ่นใหม่</h3>
@@ -12,7 +12,7 @@
     </div>
 
     <div class="carousel-item">
-      <img src="images/promote/howto_1550x500.jpg" alt="PROMOTE2 - HOWTO" style="padding: 0px;" width="100%" height="auto">
+      <img src="assets/pr_img/howto_1550x500.jpg" alt="PROMOTE2 - HOWTO" style="padding: 0px;" width="100%" height="auto">
       <div class="carousel-caption" style="text-align: left;">
         <!--
         <h3>เว็บเราใช้งานยังไงน้าา ?</h3>
@@ -22,7 +22,7 @@
     </div>
 
     <div class="carousel-item">
-      <img src="images/promote/AdsbyITKMITL_1550x500.jpg" alt="PROMOTE3 - ADS by ITKMITL" style="padding: 0px;" width="100%" height="auto">
+      <img src="assets/pr_img/AdsbyITKMITL_1550x500.jpg" alt="PROMOTE3 - ADS by ITKMITL" style="padding: 0px;" width="100%" height="auto">
       <div class="carousel-caption" style="text-align: left;">
         <!--
         <h3>รับสมัครนักศึกษาปริญญาตรีรุ่นใหม่</h3>
