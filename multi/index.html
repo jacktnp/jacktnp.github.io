@@ -1,28 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Nakhonpathom Travel</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+
+  <link href="http://vjs.zencdn.net/6.6.3/video-js.css" rel="stylesheet">
+
+  <!-- If you'd like to support IE8 -->
+  <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+
+  <link rel="stylesheet" href="css/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css?v=25">
+  <script src="css/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <script src="http://vjs.zencdn.net/6.6.3/video.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
   <style type="text/css">
-  @import url('https://fonts.googleapis.com/css?family=Kanit');
-  .jumbotron{
-	margin-bottom: 0rem !important;
-	border-radius: 0px !important;
-  }
-  /* Make the image fully responsive */
-  .carousel-inner img {
-      width: 100%;
-      height: 100%;
-  }
-  </style>
+    html{
+      font-family: 'Kanit', sans-serif !important;
+    }
 
+    .giftcard{
+      position: relative;
+      width: 100%;
+      height: auto;
+      padding: 0.75em 0.75em 0em 0.75em;
+      background-color: #fff;
+      border: 1px dashed #b5b5b5;
+    }
+
+    #card1:hover{
+      animation: card 0.4s infinite alternate;
+    }
+
+    #card2:hover{
+      animation: card 0.4s infinite alternate;
+    }
+
+    #card3:hover{
+      animation: card 0.4s infinite alternate;
+    }
+
+    #card4:hover{
+      animation: card 0.4s infinite alternate;
+    }
+
+
+    @keyframes card {
+    0%{transform: translateY(0);}
+    10%{transform: translateY(-2px);}
+    20%{transform: translateY(-5px);}
+    30%{transform: translateY(-8px);}
+    40%{transform: translateY(-11px);}
+    50%{transform: translateY(-14px);}
+    60%{transform: translateY(-17px);}
+    70%{transform: translateY(-20px);}
+    80%{transform: translateY(-23px);}
+    90%{transform: translateY(-26px);}
+    100%{transform: translateY(-29px);}
+    }
+
+  </style>
 </head>
 
 <!-- Navbar -->
@@ -30,16 +73,14 @@
       <div class="menu-icon">
         <i class="fa fa-bars fa-2x"></i>
       </div>
-      <div class="logo">
-        LOGO
-      </div>
+     
       <div class="menu">
         <ul>
-          <li><a href="#slogan">คำขวัญ</a></li>
-          <li><a href="#place">สถานที่ท่องเที่ยว</a></li>
-          <li><a href="#gift">ของฝาก</a></li>
-          <li><a href="#backpack">การเดินทาง</a></li>
-          <li><a href="#gallery">แกลอรี่</a></li>
+          <li><a href="#slogan-select">คำขวัญ</a></li>
+          <li><a href="#travel-select">สถานที่ท่องเที่ยว</a></li>
+          <li><a href="#gift-select">ของฝาก</a></li>
+          <li><a href="#backpack-select">การเดินทาง</a></li>
+          <li><a href="#gallery-select">แกลอรี่</a></li>
         </ul>
       </div>
     </nav>
@@ -64,7 +105,7 @@
 <section id="4" style="background: #000;margin:20px;padding: 20px;"><p>A\nA</p></section>
 -->
 
-<div class="jumbotron text-center" style="background-color: #fff !important;">
+<div class="jumbotron text-center" style="background-color: #f8f1e5 !important;" id="slogan-select">
 
   <h1 id="slogan">คำขวัญประจำจังหวัดนครปฐม</h1>
 	<br>
@@ -74,30 +115,109 @@
 
 </div>
 
-<div class="jumbotron text-center" style="background-color: #0e77bb !important;">
+<div class="jumbotron" style="background-color: #0e77bb !important;background: url('assets/web-img/bg/bg_travel.png') center/cover;" id="travel-select">
 
-	<h1 id="place">สถานที่ท่องเที่ยวแนะนำ (600x750)</h1>
-  <br><br>
-  <iframe class="embed-responsive-item" src="slide.html" width="100%" height="457px" style="border:none;"></iframe>
+	<h1 id="travel">เที่ยวไหนดี</h1>
+  <br>
+
+<!-- test-->
+<div class="container">
+<div class="row">
+
+  <div class="col-12 col-md-6 nCard" id="page-one">
+    <div class="title"><i class="fas fa-map-marker-alt"></i> เมืองมายา หอภาพยนตร์</div>
+    <div class="hide detail">หอภาพยนตร์ (องค์การมหาชน) หรือ พิพิธภัณฑ์ภาพยนตร์ไทย ตั้งอยู่ที่ ถนนพุทธมณฑล สาย 5  จังหวัดนครปฐม ใกล้มหาวิทยาลัยมหิดล เป็น...</div>
+    <div class="hide readmore"><a href="goto/maya.html">Read more</a></div>
+  </div>
+
+  <div class="col-12 col-md-6 nCard" id="page-four">
+    <div class="title"><i class="fas fa-map-marker-alt"></i> วัดพระปฐมเจดีย์ราชวรมหาวิหาร</div>
+    <div class="hide detail">องค์พระปฐมเจดีย์ เป็นปูชนียสถานอันสำคัญของประเทศไทย อยู่ภายในวัดพระปฐมเจดีย์ราชวรมหาวิหาร มีประวัติความเป็นมายาวนาน</div>
+    <div class="hide readmore"><a href="goto/temple.html">Read more</a></div>
+  </div>
+
+      
+	<div class="col-12 col-md-4 nCard" id="page-two">
+		<div class="title"><i class="fas fa-map-marker-alt"></i> พุทธมณฑล</div>
+		<div class="hide detail">เมื่อวันที่ 5 มิถุนายน พ.ศ. 2487 รัฐบาลไทยภายใต้การนำของจอมพล ป.พิบูลสงคราม นายกรัฐมนตรีในขณะนั้นได้พยายามออกกฎหมายจัดสร้างพุทธบุรีมณฑลที่จังหวัดสระบุรีตั้งแต่ช่วงปลายสงครามโลกครั้งที่ 2 โดยมี...</div>
+		<div class="hide readmore"><a href="goto/phutthamonthon.html">Read more</a></div>
+	</div>
+
+	<div class="col-12 col-md-4 nCard" id="page-three">
+		<div class="title"><i class="fas fa-map-marker-alt"></i> เจษฎา เทคนิค มิวเซียม</div>
+		<div class="hide detail">ก่อตั้งขึ้นโดย คุณเจษฎา เดชสกุลฤทธิ์ นักธุรกิจชาวไทย ซึ่งเกิดแรงบันดาลใจ จากการเดินทางไปท่องเที่ยวดูงานด้านเครื่องยนต์กลไก...</div>
+		<div class="hide readmore"><a href="goto/jesada.html">Read more</a></div>
+	</div>
+
+	<div class="col-12 col-md-4 nCard" id="page-five">
+		<div class="title"><i class="fas fa-map-marker-alt"></i> พระราชวังสนามจันทร์</div>
+		<div class="hide detail">พระราชวังสนามจันทร์เป็นพระราชวังที่ พระบาทสมเด็จพระมงกุฏเกล้าเจ้าอยู่หัว โปรดเกล้าฯ ให้สร้างขึ้นบนบริเวณที่คาดว่าเป็นพระราชวังเก่าของกษัตริย์สมัยโบราณที่ เรียกว่า เนินปราสาท เพื่อเป็น...</div>
+		<div class="hide readmore"><a href="goto/sanam-chandra.html">Read more</a></div>
+	</div>
+
+</div>
+</div>
+<!-- test -->
   
 </div>
 
-<div class="jumbotron text-center" style="background-color: #fff !important;">
-
-  <h1 id="gift">ของฝาก (ภาพ 4 ภาพติดกัน 7ชิ้น)</h1>
-  <br>
-  <br>
+<div class="jumbotron text-center" style="background-color: #f8f1e5 !important;" id="food-select">
   
 </div>
 
-<div class="jumbotron bg-info text-center" style="background-color: #0e77bb !important;">
+<div class="jumbotron text-center" style="background-color: #153e58 !important;" id="food-select">
+  <h1 id="food">หิวเมื่อไหร่ก็แวะมา</h1>
+</div>
+
+<div class="jumbotron text-center" style="background-color: #f8f1e5 !important;" id="gift-select">
+
+  <h1 id="gift">ซื้ออะไรไปฝากเพื่อน</h1>
+  <br>
+  <div class="row">
+    <div class="col-12 col-md-3">
+        <div class="giftcard" id="card1" style="transform: rotate(-7deg);">
+          <i class="fas fa-circle" style="margin-bottom: 0.75em;"></i>
+          <img src="assets/travel/gi-ft/1.png" width="100%" height="auto">
+          <p style="margin-top:0.85em;width: 100%;height: auto;text-align: center">ขนมเปี๊ยะ</p>
+        </div>
+    </div>
+    <div class="col-12 col-md-3">
+        <div class="giftcard" id="card2" style="transform: rotate(4deg);">
+          <i class="fas fa-circle" style="margin-bottom: 0.75em;"></i>
+          <img src="assets/travel/gi-ft/2.png" width="100%" height="auto">
+          <p style="margin-top:0.85em;width: 100%;height: auto;text-align: center">ส้มโอ</p>
+        </div>
+    </div>
+    <div class="col-12 col-md-3">
+        <div class="giftcard" id="card3" style="transform: rotate(-1deg);">
+          <i class="fas fa-circle" style="margin-bottom: 0.75em;"></i>
+          <img src="assets/travel/gi-ft/3.png" width="100%" height="auto">
+          <p style="margin-top:0.85em;width: 100%;height: auto;text-align: center">ข้าวหลาม</p>
+        </div>
+    </div>
+    <div class="col-12 col-md-3">
+        <div class="giftcard" id="card4" style="transform: rotate(9deg);">
+          <i class="fas fa-circle" style="margin-bottom: 0.75em;"></i>
+          <img src="assets/travel/gi-ft/4.png" width="100%" height="auto">
+          <p style="margin-top:0.85em;width: 100%;height: auto;text-align: center">เค้กฝอยทอง</p>
+        </div>
+    </div>
+  </div>
+  
+</div>
+
+<div class="jumbotron bg-info text-center" style="background-color: #153e58 !important;" id="backpack-select">
   <div class="row">
   <div class="col-sm-1"></div>
   <div class="col-sm-7">
-    <!-- 16:9 aspect ratio -->
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_7E4aY4VCzM" allowfullscreen></iframe>
-</div>
+<!-- Video-->
+<video id="my-video" class="video-js" controls preload="auto" width="720" height="480"
+  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+    <source src="assets/video/pr.avi" type='video/mp4'>
+    <p class="vjs-no-js">
+      Video loading fail
+    </p>
+  </video>
   </div>
   <div class="col-sm-3">
     <img src="image/backpack.png" width="95%" id="backpack">
@@ -106,7 +226,7 @@
 </div>
 </div>
 
-<div class="jumbotron text-center" style="background-color: #fff;">
+<div class="jumbotron text-center" style="background-color: #f8f1e5;" id="gallery-select">
 	
 <div class="row">
   <div class="col-sm-1"></div>
@@ -165,7 +285,7 @@
 </body>
 
 <!-- WAVE -->
-<svg style="background-color: #fff;fill:#ffa700;margin-bottom: -25px;" viewBox="0 0 1440 120" aria-hidden="true">
+<svg style="background-color: #f8f1e5;fill:#ffa700;margin-bottom: -2em;" viewBox="0 0 1440 120" aria-hidden="true">
   <path d="M1440,21.2101911 L1440,120 L0,120 L0,21.2101911 C120,35.0700637 240,42 360,42 C480,42 600,35.0700637 720,21.2101911 C808.32779,12.416393 874.573633,6.87702029 918.737528,4.59207306 C972.491685,1.8109458 1026.24584,0.420382166 1080,0.420382166 C1200,0.420382166 1320,7.35031847 1440,21.2101911 Z"></path>
 </svg>
 <!-- WAVE -->
@@ -197,10 +317,22 @@ $(document).ready(function() {
 $(window).on("scroll", function() {
   if ($(window).scrollTop()) {
     $("nav").addClass("black");
+
   } else {
     $("nav").removeClass("black");
   }
 });
+
+//Smooth
+$(document).ready(function() {
+        $("a[href*='#' ]:not([href='#])").click(function() {
+          let target = $(this).attr("href");
+          $(' html,body ').stop().animate({
+            scrollTop: $(target).offset().top
+          }, 1000);
+          event.preventDefault();
+        });
+      });
 
 //Effect
 $(function() {

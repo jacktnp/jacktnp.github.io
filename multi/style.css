@@ -1,87 +1,10 @@
 /* CSS Style */
-
-.cover{
-  width: 100% !important;
-  height: 780px;
-	background-image: url('image/cover2.jpg');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.cover2{
-  width: 100% !important;
-  height: 500px;
-  background-image: url('image/cover3.jpg');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.logo-name{
-  position:absolute;
-  width:100%;
-  height:30px;
-  top:20%;
-  text-align:right;
-  right: 5.7%;
-  opacity: 0.75;
-  animation: fade-in 3s forwards;
-}
-
-@keyframes fade-in{
-  0%{
-    opacity: 0;
-  }
-  10%{
-    opacity: 0.1;
-  }
-  20%{
-    opacity: 0.3;
-  }
-  30%{
-    opacity: 0.5;
-  }
-  40%{
-    opacity: 0.75;
-  }
-  50%{
-    opacity: 0.5;
-  }
-  60%{
-    opacity: 0.3;
-  }
-  70%{
-    opacity: 0.1;
-  }
-  80%{
-    opacity: 0;
-  }
-  90%{
-    opacity: 0.3;
-  }
-  100%{
-    opacity: 0.75;
-  }
-}
-
-.jumbotron{
-	margin-bottom: 0rem !important;
-}
-
-.logo {
-  position: fixed;
-  float: left;
-  margin: 16px 36px;
-  color: #fff;
-  font-weight: bold;
-  font-size: 24px;
-}
+@import url('https://fonts.googleapis.com/css?family=Kanit');
 
 nav {
   position: fixed;
   width: 100%;
-  z-index:10;
+  z-index:99;
   font-family: 'Kanit', sans-serif;
 }
 
@@ -162,6 +85,92 @@ a:hover{
   .menu-icon {
     display: block;
   }
+}
+
+.cover{
+  width: 100% !important;
+  height: 780px;
+	background-image: url('image/cover2.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cover2{
+  width: 100% !important;
+  height: 500px;
+  background-image: url('image/cover3.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo-name{
+  position:absolute;
+  width:100%;
+  height:30px;
+  top:20%;
+  text-align:right;
+  right: 5.7%;
+  opacity: 0.75;
+  animation: fade-in 3s forwards;
+}
+
+@keyframes fade-in{
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 0.1;
+  }
+  20%{
+    opacity: 0.3;
+  }
+  30%{
+    opacity: 0.5;
+  }
+  40%{
+    opacity: 0.75;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  60%{
+    opacity: 0.3;
+  }
+  70%{
+    opacity: 0.1;
+  }
+  80%{
+    opacity: 0;
+  }
+  90%{
+    opacity: 0.3;
+  }
+  100%{
+    opacity: 0.75;
+  }
+}
+
+.jumbotron{
+	margin-bottom: 0em !important;
+  border-radius: 0px !important;
+  padding-bottom: 4em !important;
+}
+
+/* Make the image fully responsive */
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  position: fixed;
+  float: left;
+  margin: 16px 36px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 section {
@@ -310,9 +319,11 @@ section h1 {
                                        #ffa700 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding-top: 1em !important;
   }
 
-#place {
+#travel {
+    text-align: center;
     font-family: 'Kanit', sans-serif;
     background: linear-gradient(45deg, #fff 0%, 
                                        #f4dc75 25%, 
@@ -320,6 +331,18 @@ section h1 {
                                        #fff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding-top: 0.8em !important;
+  }
+
+#food {
+    font-family: 'Kanit', sans-serif;
+    background: linear-gradient(45deg, #0e77bb 0%, 
+                                       #0e77bb 25%, 
+                                       #f4dc75 51%, 
+                                       #ffa700 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 1em !important;
   }
 
 #gift {
@@ -330,6 +353,15 @@ section h1 {
                                        #0e77bb 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding-top: 1em !important;
+  }
+
+#backpack {
+    padding-top: 1em !important;
+  }
+
+#gallery {
+    padding-top: 1em !important;
   }
 
 p{
@@ -337,3 +369,115 @@ p{
   font-size: 1.3em;
 }
 
+/* HOUSE OF CARD */
+/* HOUSE OF CARD */
+/* HOUSE OF CARD */
+
+a {
+  text-decoration: none;
+}
+
+#page-one{
+  transition: 0.3s;
+  background: url('image/bg2.png') center/cover, url('assets/travel/maya/p1.png') center/cover;
+}
+#page-one:hover{
+  background: url('image/bg.png') center/cover, url('assets/travel/maya/p1.png') center/cover;
+}
+#page-two{
+  transition: 0.3s;
+  background: url('image/bg2.png') center/cover, url('assets/travel/phutthamonthon/p2.png') center/cover;
+}
+#page-two:hover{
+  background: url('image/bg.png') center/cover, url('assets/travel/phutthamonthon/p2.png') center/cover;
+}
+#page-three{
+  transition: 0.3s;
+  background: url('image/bg2.png') center/cover, url('assets/travel/jesada/p3.png') center/cover;
+}
+#page-three:hover{
+  background: url('image/bg.png') center/cover, url('assets/travel/jesada/p3.png') center/cover;
+}
+#page-four{
+  transition: 0.3s;
+  background: url('image/bg2.png') center/cover, url('assets/travel/phra-pathommachedi/p4.png') center/cover;
+}
+#page-four:hover{
+  background: url('image/bg.png') center/cover, url('assets/travel/phra-pathommachedi/p4.png') center/cover;
+}
+#page-five{
+  transition: 0.3s;
+  background: url('image/bg2.png') center/cover, url('assets/travel/sanam-chandra/p5.png') center/cover;
+}
+#page-five:hover{
+  background: url('image/bg.png') center/cover, url('assets/travel/sanam-chandra/p5.png') center/cover;
+}
+
+.nCard{
+  padding: 1rem;
+  height: 15.75rem;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.nCard:hover{
+  box-shadow: 1px 1px 7px #000;
+  z-index: 22;
+}
+
+.hide{
+  display: none;
+}
+
+.nCard:hover .hide{
+  display: block;
+}
+
+.title{
+  font-family: 'Kanit';
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.detail{
+  font-family: 'Kanit';
+  color: #fff;
+  font-size: 0.85rem;
+}
+
+.readmore {
+  font-family: 'Kanit';
+  font-size: 1rem;
+  color: #fff !important;
+  text-align: center !important;
+  transition: all 0.3s;
+  margin: 0.3rem;
+}
+.readmore a{
+  text-decoration: underline;
+  color: #fff !important;
+}
+.readmore a:hover{
+  text-decoration: none;
+  color: #fff !important;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+.readmore a::after {
+  color: #fff !important;
+  text-align: center !important;
+  content: ' \2192';
+  opacity: 0;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: all 0.3s;
+}
+.readmore a:hover::after {
+  text-shadow: 1px 1px 1px #000;
+  transform: translate(5px, -50%);
+  opacity: 1;
+}
