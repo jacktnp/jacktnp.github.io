@@ -1,0 +1,17 @@
+{
+"username" : "helloKitty",
+"social_media" : [
+{
+"description" : "twitter",
+"link" : "https://twitter.com/itwebtech"
+},
+{
+"description" : "facebook",
+"link" : "https://www.facebook.com/itwebtech"
+},
+{
+"description" : "github",
+"link" : "https://github.com/itwebtech"
+}
+]
+}
